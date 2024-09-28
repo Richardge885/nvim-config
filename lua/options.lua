@@ -1,4 +1,6 @@
 local opt = vim.opt
+
+opt.cursorline = true
 opt.relativenumber = true
 opt.number = true
 opt.numberwidth = 4
@@ -24,4 +26,3 @@ opt.pumheight = 10
 opt.swapfile = false
 opt.termguicolors = true
 opt.timeoutlen = 300
-
