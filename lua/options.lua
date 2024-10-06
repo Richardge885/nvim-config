@@ -1,6 +1,8 @@
 local opt = vim.opt
 
+-- vim.opt.guicursor = ""
 opt.cursorline = true
+opt.colorcolumn = "81"
 opt.relativenumber = true
 opt.number = true
 opt.numberwidth = 4
@@ -18,6 +20,7 @@ opt.fileencoding = "utf-8"
 opt.splitbelow = true
 opt.splitright = true
 opt.signcolumn = "yes"
+opt.cmdheight = 0
 opt.wrap = false
 opt.linebreak = true
 opt.scrolloff = 10

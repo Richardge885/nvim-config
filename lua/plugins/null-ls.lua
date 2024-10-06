@@ -19,6 +19,7 @@ return {
 
 			sources = {
 				null_ls.builtins.formatting.stylua,
+				null_ls.builtins.formatting.black.with({ extra_args = { "--fast" } }),
 				null_ls.builtins.formatting.prettier.with({
 					filetypes = {
 						"javascript",
@@ -33,7 +34,27 @@ return {
 						"md",
 						"txt",
 					},
-					only_local = "node_modules/.bin",
+					extra_args = {
+						-- "--no-semi=false",
+						-- "--single-quote=true",
+						-- "--jsx-single-quote=true",
+						-- "--line-width=80",
+						-- "--trailing-comma=all",
+						-- "--no-bracket-spacing=false",
+						-- "--bracket-same-line=false",
+						-- "--arrow-parens=always",
+						-- "--require-pragma=true",
+
+						-- "--no-semi",
+						"--single-quote",
+						"--jsx-single-quote",
+						"--line-width",
+						"--trailing-comma",
+						"--no-bracket-spacing",
+						"--bracket-same-line",
+						"--arrow-parens",
+						"--require-pragma",
+					},
 				}),
 				null_ls.builtins.diagnostics.stylelint.with({
 					filetypes = {
@@ -41,7 +62,7 @@ return {
 						"scss",
 					},
 				}),
-				null_ls.builtins.diagnostics.eslint_d,
+				-- null_ls.builtins.diagnostics.eslint_d,
 				null_ls.builtins.completion.spell,
 			},
 		})

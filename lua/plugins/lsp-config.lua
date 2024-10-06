@@ -31,6 +31,7 @@ return {
 			vim.keymap.set("n", "gI", vim.lsp.buf.implementation, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, {})
+			vim.keymap.set("n", "gl", vim.diagnostic.open_float, {})
 		end,
 	},
 }

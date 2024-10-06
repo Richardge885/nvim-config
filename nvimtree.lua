@@ -22,8 +22,9 @@ return {
         end
         require("nvim-tree").setup({
             on_attach = my_on_attach,
-            sort = {
-                sorter = "case_sensitive",
+            update_focused_file = {
+                enable = true,
+                update_root = true,
             },
             view = {
                 width = 30,
@@ -32,10 +33,9 @@ return {
                 group_empty = true,
             },
             filters = {
-                dotfiles = true,
+                dotfiles = false,
             },
         })
-        vim.keymap.set('n', '<leader>e', "<cmd>NvimTreeToggle<cr>", {noremap = true, silent = true})
+        vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", { noremap = true, silent = true })
     end,
 }
-
