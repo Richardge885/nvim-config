@@ -1,6 +1,6 @@
 local opt = vim.opt
 
--- vim.opt.guicursor = ""
+vim.opt.guicursor = ""
 opt.cursorline = true
 opt.colorcolumn = "81"
 opt.relativenumber = true

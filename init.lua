@@ -3,7 +3,7 @@ require("options")
 require("config.lazy")
 require("auto-commands")
 
-vim.cmd.colorscheme("gruber-darker")
+vim.cmd.colorscheme("tokyonight")
 
 if vim.g.neovide then
     vim.o.guifont = "Hack Nerd Font:h17" -- text below applies for VimScript
